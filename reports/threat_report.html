@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SOC Threat Hunter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f4f6f8;
+        }
+        h1 {
+            color: #1f2937;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #d1d5db;
+            padding: 10px;
+            text-align: left;
+            vertical-align: top;
+        }
+        th {
+            background: #111827;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background: #f9fafb;
+        }
+    </style>
+</head>
+<body>
+    <h1>SOC Threat Hunter</h1>
+    <p>This report was generated automatically by the SOC Threat Hunter tool.</p>
+
+    <table>
+        <tr>
+            <th>Severity</th>
+            <th>Risk Score</th>
+            <th>Alert Type</th>
+            <th>MITRE ATT&CK</th>
+            <th>Username</th>
+            <th>Source IP</th>
+            <th>Description</th>
+            <th>Recommendation</th>
+        </tr>
+        
+        <tr>
+            <td>HIGH</td>
+            <td>90</td>
+            <td>Possible Brute Force Attack</td>
+            <td>T1110 - Brute Force</td>
+            <td>admin</td>
+            <td>192.168.1.50</td>
+            <td>5 failed login attempts detected for user &#x27;admin&#x27; from 192.168.1.50.</td>
+            <td>Investigate authentication logs, check source IP reputation, review successful logins, and consider account lockout or IP blocking.</td>
+        </tr>
+        
+        <tr>
+            <td>HIGH</td>
+            <td>85</td>
+            <td>Suspicious PowerShell Execution</td>
+            <td>T1059.001 - PowerShell</td>
+            <td>kirill</td>
+            <td>192.168.1.20</td>
+            <td>Suspicious PowerShell keyword detected: -enc</td>
+            <td>Review command line, parent process, user context, endpoint activity, and possible script execution.</td>
+        </tr>
+        
+        <tr>
+            <td>HIGH</td>
+            <td>80</td>
+            <td>New User Account Created</td>
+            <td>T1136 - Create Account</td>
+            <td>testuser</td>
+            <td>192.168.1.20</td>
+            <td>New user account &#x27;testuser&#x27; was created.</td>
+            <td>Verify whether the account creation was authorized and review related account activity.</td>
+        </tr>
+        
+        <tr>
+            <td>HIGH</td>
+            <td>95</td>
+            <td>User Added to Administrators Group</td>
+            <td>T1098 - Account Manipulation</td>
+            <td>testuser</td>
+            <td>192.168.1.20</td>
+            <td>User &#x27;testuser&#x27; was added to a privileged local group.</td>
+            <td>Confirm if the privilege change was approved. Investigate for possible privilege escalation.</td>
+        </tr>
+        
+        <tr>
+            <td>HIGH</td>
+            <td>98</td>
+            <td>Known IOC Detected</td>
+            <td>T1071 - Application Layer Protocol</td>
+            <td>unknown</td>
+            <td>45.155.205.233</td>
+            <td>Source IP 45.155.205.233 matched an IOC list.</td>
+            <td>Check threat intelligence sources, block the IP if confirmed malicious, and investigate related host activity.</td>
+        </tr>
+        
+    </table>
+</body>
+</html>

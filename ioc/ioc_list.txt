@@ -1,0 +1,5 @@
+# Example IOC list
+# In a real SOC environment, IOCs can come from threat intelligence feeds.
+45.155.205.233
+185.220.101.10
+91.219.236.232
