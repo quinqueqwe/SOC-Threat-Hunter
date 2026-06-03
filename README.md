@@ -101,24 +101,24 @@ Open `reports/threat_report.html` in a browser to view the HTML report.
 
 ### Project Structure
 
-![Project Structure](screenshots/project_structure.png)
+![Project Structure](screenshots/project_structure.jpg)
 
 ### Threat Hunting Execution
 
-![Threat Hunting Execution](screenshots/terminal_execution.png)
+![Threat Hunting Execution](screenshots/terminal_execution.jpg)
 
 ### HTML Report
 
-![HTML Report](screenshots/html_report.png)
+![HTML Report](screenshots/html_report.jpg)
 
 ### Brute Force Detection
 
-![Brute Force Detection](screenshots/bruteforce_alert.png)
+![Brute Force Detection](screenshots/bruteforce_alert.jpg)
 
 ### Suspicious PowerShell Detection
 
-![PowerShell Detection](screenshots/powershell_alert.png)
+![PowerShell Detection](screenshots/powershell_alert.jpg)
 
 ### IOC Detection
 
-![IOC Detection](screenshots/ioc_detection.png)
+![IOC Detection](screenshots/ioc_detection.jpg)
