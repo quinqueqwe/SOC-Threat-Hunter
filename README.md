@@ -96,3 +96,29 @@ Open `reports/threat_report.html` in a browser to view the HTML report.
 - Add Wazuh log support
 - Add Streamlit dashboard
 - Add unit tests
+
+## Screenshots
+
+### Project Structure
+
+![Project Structure](screenshots/project_structure.png)
+
+### Threat Hunting Execution
+
+![Threat Hunting Execution](screenshots/terminal_execution.png)
+
+### HTML Report
+
+![HTML Report](screenshots/html_report.png)
+
+### Brute Force Detection
+
+![Brute Force Detection](screenshots/bruteforce_alert.png)
+
+### Suspicious PowerShell Detection
+
+![PowerShell Detection](screenshots/powershell_alert.png)
+
+### IOC Detection
+
+![IOC Detection](screenshots/ioc_detection.png)
